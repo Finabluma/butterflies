@@ -42,12 +42,20 @@ footer {
 
   & .container {
     @apply mx-auto
+    w-full
     md:w-10/12
     lg:w-11/12
     flex
-    justify-between
+    flex-col
+    sm:flex-row
+    sm:justify-between
     items-center
-    px-24;
+    md:px-24;
+
+    & .container-inner__top {
+      @apply mb-6
+      sm:mb-0;
+    }
   }
 }
 </style>
