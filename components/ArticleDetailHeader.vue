@@ -135,13 +135,11 @@ export default {
         text-gray-300
         dark:text-gray-400
         content-after
-        sm:mb-1
-        sm:text-4xl
-        md:text-4xl
-        xl:text-4xl;
+        sm:mb-0
+        sm:text-4xl;
 
         &:after {
-          @apply mt-1;
+          @apply mt-0;
         }
       }
 

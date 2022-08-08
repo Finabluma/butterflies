@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer :class="{ footer_slug: footerSlug }">
     <!-- <p>https://ofm.sanity.studio/</p> -->
     <div class="container">
       <div class="container-inner__top">
@@ -31,6 +31,11 @@ import LinkExternal from '~/components/RichText/LinkExternal.vue'
 export default {
   name: 'AppFooter',
   components: { IconUser, LinkExternal },
+  computed: {
+    footerSlug() {
+      return this.$route.name === 'bitacora-slug'
+    },
+  },
 }
 </script>
 
@@ -50,12 +55,17 @@ footer {
     sm:flex-row
     sm:justify-between
     items-center
-    md:px-24;
+    xl:px-24;
 
     & .container-inner__top {
       @apply mb-6
       sm:mb-0;
     }
+  }
+
+  &.footer_slug {
+    @apply bg-gray-300
+  dark:bg-gray-600;
   }
 }
 </style>

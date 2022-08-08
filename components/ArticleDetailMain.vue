@@ -42,6 +42,7 @@ export default {
 .main {
   @apply relative
   z-10
+  pb-2
   bg-gray-300
   dark:bg-gray-600;
 }
