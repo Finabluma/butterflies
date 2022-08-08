@@ -90,7 +90,9 @@ export default {
     pt-10
     sm:w-11/12
     md:w-9/12
+    md:mb-20
     lg:w-8/12
+    lg:mb-24
     xl:w-7/12
     xl:mb-12
     2xl:w-6/12;
