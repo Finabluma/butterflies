@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-400
+    text-gray-700
+    dark:bg-gray-700
+    dark:text-gray-400
+    font-darkmode
+    subpixel-antialiased
+    overflow-x-hidden;
+
+    & ::selection {
+      @apply bg-red-400
+      text-gray-300
+      dark:bg-yellow-400
+      dark:text-gray-800;
+    }
+
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+      @apply font-darkmode
+      font-light
+      leading-snug;
+    }
+
+    & h1 {
+      @apply text-4xl
+      leading-none
+      mb-4
+      content-after;
+
+      &::after {
+        @apply block
+        h-0.5
+        w-7
+        mt-2
+        bg-current;
+      }
+    }
+
+    & main {
+      @apply w-screen;
+
+      & li {
+        &:after {
+          @apply block
+          bg-gray-700
+          h-[3px]
+          w-[3px]
+          rounded-md
+          mx-2
+          dark:bg-gray-300;
+        }
+      }
+    }
+  }
+
+  .icon {
+    @apply w-5;
+
+    &.icon-hashtag {
+      @apply w-4;
+    }
+  }
+}
+
+@layer components {
+  /* .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  } */
+}
