@@ -51,10 +51,9 @@ footer {
     md:w-10/12
     lg:w-11/12
     flex
-    flex-col
-    sm:flex-row
-    sm:justify-between
+    justify-between
     items-center
+    px-3
     xl:px-24;
 
     & .container-inner__top {
