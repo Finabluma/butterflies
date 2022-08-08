@@ -4,6 +4,11 @@
       :src="asset._ref"
       :alt="alternativeText"
       fit="cover"
+      :modifiers="{
+        crop: crop,
+        hotspot: hotspot,
+        q: 80,
+      }"
       sizes="xs:100vw sm:100vw xl:100vw"
     />
     <figcaption>{{ caption }}</figcaption>
@@ -29,6 +34,14 @@ export default {
     alternativeText: {
       type: String,
       default: '',
+    },
+    crop: {
+      type: Object,
+      default: null,
+    },
+    hotspot: {
+      type: Object,
+      default: null,
     },
   },
 }
