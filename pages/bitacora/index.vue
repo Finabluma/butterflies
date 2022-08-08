@@ -25,7 +25,7 @@
               :article="article"
             />
           </div>
-          <p v-else>Todavía no hay articulos publicados.</p>
+          <p v-else class="noarticles">Todavía no hay articulos publicados.</p>
         </div>
       </section>
     </main>
@@ -94,6 +94,14 @@ export default {
     xl:w-7/12
     xl:mb-12
     2xl:w-6/12;
+
+    & .noarticles {
+      @apply py-10
+      border-t
+      border-current
+      text-center
+      font-niti;
+    }
   }
 }
 </style>
