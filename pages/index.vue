@@ -105,8 +105,8 @@ export default {
       lg:w-8/12
       xl:w-7/12
       2xl:w-6/12
-      px-2
       py-5
+      mb-32
       xl:py-8;
 
       & .noarticles {

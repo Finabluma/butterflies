@@ -86,6 +86,7 @@ export default {
     items-end
     h-36
     lg:h-48;
+    
     & .title {
       @apply w-10/12
       md:w-9/12

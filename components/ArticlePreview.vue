@@ -2,7 +2,7 @@
   <article :class="teaserClass">
     <NuxtLink :to="article.slug | articleUrl">
       <header>
-        <div class="img">
+        <!-- <div class="img">
           <div v-if="article.featuredImage" class="has-img">
             <img-item
               :src="article.featuredImage.asset._ref"
@@ -17,7 +17,7 @@
             />
           </div>
           <div v-else class="has-not-img"><span></span></div>
-        </div>
+        </div> -->
 
         <div class="content">
           <h2 v-if="article.title">
@@ -33,13 +33,13 @@
 
 <script>
 import ArticleDateAndAuthor from '~/components/ArticleDateAndAuthor.vue'
-import ImgItem from '~/components/ImgItem.vue'
+// import ImgItem from '~/components/ImgItem.vue'
 
 export default {
   name: 'ArticlePreview',
   components: {
     ArticleDateAndAuthor,
-    ImgItem,
+    // ImgItem,
   },
   props: {
     article: {
@@ -62,9 +62,12 @@ export default {
 </script>
 <style lang="postcss" scoped>
 article {
-  @apply py-2
+  @apply py-3
+  px-3
   sm:mb-2
-  md:mb-1;
+  md:mb-1
+  md:px-0
+  xl:py-1;
 
   & a {
     @apply block;
@@ -78,7 +81,7 @@ article {
     transition-opacity;
   }
 
-  & .img {
+  /* & .img {
     @apply w-16
     h-16
     overflow-hidden
@@ -87,8 +90,6 @@ article {
     sm:w-20
     sm:h-20
     md:mr-4
-    /* lg:w-24
-    lg:h-24 */
     lg:mr-3
     xl:mr-6;
 
@@ -124,12 +125,15 @@ article {
         @apply rounded-full overflow-hidden h-full;
       }
     }
-  }
+  } */
 
   & .content {
-    @apply w-8/12
+    /* @apply w-8/12
     sm:w-10/12
-    md:w-[85%];
+    md:w-[85%]; */
+    @apply w-11/12
+    mx-auto
+    md:w-full;
 
     & h2 {
       @apply border-b
