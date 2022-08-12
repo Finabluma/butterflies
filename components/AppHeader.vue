@@ -108,12 +108,11 @@ export default {
   items-center;
 
   & #global-nav {
-    @apply w-10/12
-    mx-auto
+    @apply mx-auto
+    w-10/12
+    md:w-9/12
     lg:w-8/12
-    lg:px-2
-    xl:w-8/12
-    xl:px-12
+    xl:w-7/12
     2xl:w-6/12;
 
     & .global-nav__inner {

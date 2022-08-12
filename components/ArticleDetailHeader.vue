@@ -132,6 +132,7 @@ export default {
       & h1 {
         @apply font-darkmode
         text-3xl
+        mb-0
         text-gray-300
         dark:text-gray-400
         content-after
@@ -139,7 +140,7 @@ export default {
         sm:text-4xl;
 
         &:after {
-          @apply mt-0;
+          @apply mt-1;
         }
       }
 

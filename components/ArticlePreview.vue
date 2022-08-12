@@ -63,7 +63,6 @@ export default {
 <style lang="postcss" scoped>
 article {
   @apply py-2
-  sm:px-6
   sm:mb-2
   md:mb-1;
 
@@ -88,8 +87,8 @@ article {
     sm:w-20
     sm:h-20
     md:mr-4
-    lg:w-24
-    lg:h-24
+    /* lg:w-24
+    lg:h-24 */
     lg:mr-3
     xl:mr-6;
 
@@ -137,7 +136,8 @@ article {
       border-black/30
       text-xl
       font-darkmode
-      font-normal
+      font-medium
+      sm:text-xl
       pb-1
       mb-1
       dark:border-white/30

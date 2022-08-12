@@ -25,11 +25,6 @@ export default {
       default: null,
     },
   },
-  computed: {
-    richClass() {
-      return this.$route.name === 'bitacora'
-    },
-  },
 }
 </script>
 
@@ -48,7 +43,8 @@ export default {
   & .text-section__inner {
     @apply w-10/12
     mx-auto
-    lg:w-8/12
+    sm:w-9/12
+    lg:w-6/12
     lg:px-2
     xl:w-7/12
     2xl:w-5/12;

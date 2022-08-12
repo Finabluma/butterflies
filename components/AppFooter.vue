@@ -47,18 +47,18 @@ footer {
 
   & .container {
     @apply mx-auto
-    w-full
-    md:w-10/12
-    lg:w-11/12
+    w-10/12
+    md:w-9/12
+    lg:w-8/12
+    xl:w-7/12
+    2xl:w-6/12
+
     flex
     justify-between
-    items-center
-    px-3
-    xl:px-24;
+    items-center;
 
     & .container-inner__top {
-      @apply mb-6
-      sm:mb-0;
+      @apply mb-6;
     }
   }
 

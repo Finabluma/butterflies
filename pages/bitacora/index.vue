@@ -1,5 +1,5 @@
 <template>
-  <div class="bitacora">
+  <div class="page">
     <app-header />
     <main v-if="page">
       <div
@@ -75,35 +75,4 @@ export default {
   },
 }
 </script>
-<style lang="postcss">
-.bitacora {
-  @apply w-screen
-  min-h-screen
-  overflow-x-hidden
-  flex
-  flex-col;
 
-  & main .articulos {
-    @apply w-full
-    mx-auto
-    mb-12
-    pt-10
-    sm:w-11/12
-    md:w-9/12
-    md:mb-20
-    lg:w-8/12
-    lg:mb-24
-    xl:w-7/12
-    xl:mb-12
-    2xl:w-6/12;
-
-    & .noarticles {
-      @apply py-10
-      border-t
-      border-current
-      text-center
-      font-niti;
-    }
-  }
-}
-</style>

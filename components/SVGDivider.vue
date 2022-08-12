@@ -17,11 +17,6 @@
     </g>
   </svg>
 </template>
-
-<script>
-export default {}
-</script>
-
 <style lang="postcss" scoped>
 #divider {
   @apply w-full;

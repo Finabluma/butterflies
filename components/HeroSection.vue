@@ -1,10 +1,6 @@
 <template>
   <div class="heroSection">
-    <section
-      v-if="pageSection.disabled !== true"
-      :class="{ bitacora: heroClass }"
-      class="hero"
-    >
+    <section v-if="pageSection.disabled !== true" class="hero">
       <div class="h-content">
         <div class="h-text">
           <div class="h-text__inner">
@@ -30,123 +26,75 @@
         </div>
       </div>
     </section>
-    <div v-if="heroClass" class="svgDivider">
+    <!-- <div v-if="heroClass" class="svgDivider">
       <SVGDivider />
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import ImgItem from '~/components/ImgItem.vue'
-import SVGDivider from '~/components/SVGDivider.vue'
+// import SVGDivider from '~/components/SVGDivider.vue'
+gsap.registerPlugin(ScrollTrigger)
 
 export default {
-  components: { ImgItem, SVGDivider },
+  components: {
+    ImgItem,
+    // SVGDivider,
+  },
   props: {
     pageSection: {
       type: Object,
       default: null,
     },
   },
-  computed: {
-    heroClass() {
-      return this.$route.name === 'bitacora'
-    },
-  },
+  data: () => ({
+    tlHeading: null,
+  }),
+  // computed: {
+  //   heroClass() {
+  //     return this.$route.name === 'index'
+  //   },
+  // },
 }
 </script>
-
 <style lang="postcss" scoped>
-.hero {
-  @apply w-screen
-  min-h-[40vh]
-  sm:min-h-[50vh]
-  md:min-h-[50vh]
-  lg:min-h-[50vh]
-  xl:min-h-[45vh]
-  overflow-hidden
-  bg-gray-300
+.heroSection {
+  @apply bg-gray-300
   dark:bg-gray-600
   flex
   justify-center
   items-end
-  pb-10
-  sm:pb-20;
+  h-36
+  lg:h-48;
 
-  & .h-content {
-    @apply relative
-    h-full;
+  & .hero {
+    @apply w-10/12
+    md:w-9/12
+    lg:w-8/12
+    xl:w-7/12
+    2xl:w-6/12
+    mx-auto;
 
-    & .h-text {
-      @apply w-screen;
+    & h1 {
+      @apply font-cameo
+      tracking-wider
+      mb-2;
 
-      & .h-text__inner {
-        @apply w-10/12
-        mx-auto
-        max-h-full
-        h-full
-        text-center
-        lg:w-8/12;
-
-        & h1 {
-          @apply font-cameo
-          tracking-wider
-          mb-2;
-
-          &:after {
-            @apply content-none;
-          }
-        }
-
-        & p {
-          @apply mt-0
-          text-sm
-          font-niti
-          leading-tight
-          lowercase;
-        }
+      &:after {
+        @apply content-none;
       }
     }
 
-    & .h-image {
-      @apply relative
-      content-before;
-
-      &::before {
-        @apply absolute
-        top-0
-        left-0
-        z-10
-        w-screen
-        h-full
-        bg-gradient-to-b
-        from-gray-400/30
-        to-gray-300/90;
-      }
+    & p {
+      @apply mt-0
+      text-sm
+      font-niti
+      leading-tight
+      lowercase;
     }
-  }
-}
-.bitacora {
-  @apply min-h-0
-  pb-0
-  h-80
-  md:h-[500px]
-  2xl:h-[600px];
-
-  & .h-content {
-    @apply flex
-    items-center
-    pb-10;
-  }
-}
-.heroSection {
-  @apply relative;
-
-  & .svgDivider {
-    @apply absolute
-    w-full
-    bottom-0
-    left-0;
   }
 }
 </style>
