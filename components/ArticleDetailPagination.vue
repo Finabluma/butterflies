@@ -118,6 +118,7 @@ section {
           dark:bg-opacity-30
           mb-3
           px-2
+          py-2
           md:h-36
           lg:h-32;
 
