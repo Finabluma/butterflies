@@ -88,11 +88,14 @@ export default {
     mr-0
     w-auto
     font-darkmode
-    bg-gray-700
-    text-gray-400
+    bg-red-400
+    text-gray-300
     rounded-none
     text-base
-    lg:text-lg;
+    break-all
+    lg:text-lg
+    dark:bg-gray-700
+    dark:text-yellow-400;
   }
 }
 </style>

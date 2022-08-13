@@ -1,12 +1,12 @@
 <template>
   <div v-if="article.categories">
     <span class="sr-only">Categorías:</span>
-    <IconHashtag />
+    <IconHashtag class="mr-1" />
     <span v-for="(category, index) in article.categories" :key="category.slug">
       <NuxtLink :to="category.slug | articleCategoryUrl">
         {{ category.title }}
       </NuxtLink>
-      <span v-if="index !== article.categories.length - 1">,</span>
+      <span v-if="index !== article.categories.length - 1"></span>
     </span>
   </div>
 </template>
@@ -34,7 +34,11 @@ div {
   mb-5;
 
   & span {
-    @apply flex;
+    @apply flex
+    items-center
+    flex-wrap
+    pr-0.5
+    mb-1;
   }
 
   & a {
@@ -42,7 +46,9 @@ div {
     font-niti
     lowercase
     leading-7
-    px-1;
+    px-0.5
+    border-current
+    border;
   }
 }
 </style>
