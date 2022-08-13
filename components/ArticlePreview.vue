@@ -62,7 +62,7 @@ export default {
 </script>
 <style lang="postcss" scoped>
 article {
-  @apply py-3
+  @apply py-1
   px-3
   sm:mb-2
   md:mb-1
@@ -145,7 +145,7 @@ article {
       pb-1
       mb-1
       dark:border-white/30
-      xl:text-2xl;
+      lg:text-4xl;
     }
   }
 

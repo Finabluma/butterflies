@@ -37,14 +37,14 @@ div {
     @apply flex
     items-center
     flex-wrap
-    pr-0.5
+    mr-1
     mb-1;
   }
 
   & a {
     @apply text-base
     font-niti
-    lowercase
+    capitalize
     leading-7
     px-0.5
     border-current

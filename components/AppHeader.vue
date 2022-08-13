@@ -112,6 +112,7 @@ export default {
     w-10/12
     md:w-9/12
     lg:w-8/12
+    lg:px-2
     xl:w-7/12
     2xl:w-6/12;
 

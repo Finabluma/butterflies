@@ -38,7 +38,8 @@ export default {
     font-niti
     flex
     justify-start
-    mt-1;
+    mt-1
+    lg:text-sm;
 
     & li {
       @apply border-b-0 mb-0;

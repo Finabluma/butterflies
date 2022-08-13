@@ -68,7 +68,8 @@ export default {
   justify-center
   items-end
   h-36
-  lg:h-48;
+  lg:h-56
+  xl:h-60;
 
   & .hero {
     @apply w-10/12
@@ -81,7 +82,8 @@ export default {
     & h1 {
       @apply font-cameo
       tracking-wider
-      mb-2;
+      mb-2
+      lg:text-6xl;
 
       &:after {
         @apply content-none;
@@ -93,7 +95,8 @@ export default {
       text-sm
       font-niti
       leading-tight
-      lowercase;
+      lowercase
+      lg:text-lg;
     }
   }
 }

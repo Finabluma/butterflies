@@ -95,7 +95,8 @@ section {
     md:justify-between
     md:w-10/12
     lg:w-9/12
-    2xl:w-8/12;
+    xl:w-8/12
+    2xl:w-7/12;
 
   & .previewlink {
     @apply px-2
@@ -116,7 +117,9 @@ section {
           dark:bg-gray-800
           dark:bg-opacity-30
           mb-3
-          p-2;
+          px-2
+          md:h-36
+          lg:h-32;
 
         & .icon {
           @apply hidden
