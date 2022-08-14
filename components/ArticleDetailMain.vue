@@ -48,7 +48,7 @@ export default {
 }
 
 .articledetailmain {
-  @apply w-11/12
+  @apply w-10/12
     mx-auto
     md:w-10/12
     lg:w-8/12

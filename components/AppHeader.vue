@@ -48,7 +48,7 @@
             /> -->
           </span></NuxtLink
         >
-        <color-mode-picker />
+        <!-- <color-mode-picker /> -->
       </div>
     </nav>
   </header>
@@ -56,11 +56,11 @@
 <script>
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-import ColorModePicker from '~/components/ColorModePicker.vue'
+// import ColorModePicker from '~/components/ColorModePicker.vue'
 
 export default {
   name: 'AppHeader',
-  components: { ColorModePicker },
+  // components: { ColorModePicker },
   data: () => ({
     tl: gsap.timeline({
       paused: true,

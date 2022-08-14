@@ -74,7 +74,8 @@ export default {
   & h5 {
     @apply font-niti
     text-lg
-    pl-2;
+    mb-1
+    md:px-2;
   }
 
   & blockquote {

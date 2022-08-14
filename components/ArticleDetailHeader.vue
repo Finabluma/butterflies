@@ -118,7 +118,7 @@ export default {
     lg:pb-4;
 
     & .info-hero {
-      @apply w-11/12
+      @apply w-10/12
       mx-auto
       flex
       flex-col
@@ -140,7 +140,7 @@ export default {
         sm:text-4xl;
 
         &:after {
-          @apply mt-1;
+          @apply mt-3;
         }
       }
 

@@ -41,8 +41,8 @@ export default {
 
       & li {
         @apply lowercase
-          leading-7
-          text-xs
+          leading-6
+          text-sm
           font-niti
           flex
           items-center
