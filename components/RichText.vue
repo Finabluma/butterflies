@@ -71,6 +71,12 @@ export default {
     mb-8;
   }
 
+  & h5 {
+    @apply font-niti
+    text-lg
+    pl-2;
+  }
+
   & blockquote {
     @apply pl-5
     border-l-8

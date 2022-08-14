@@ -1,5 +1,5 @@
 <template>
-  <div v-if="article">
+  <div v-if="article" class="articlePost">
     <app-header />
     <main>
       <article-detail :article="article" />
@@ -42,3 +42,9 @@ export default {
   },
 }
 </script>
+<style lang="postcss">
+.articlePost {
+  @apply bg-gray-300
+  dark:bg-gray-600;
+}
+</style>
