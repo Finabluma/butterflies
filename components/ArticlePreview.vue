@@ -145,7 +145,7 @@ article {
       pb-1
       mb-1
       dark:border-white/30
-      lg:text-4xl;
+      lg:text-3xl;
     }
   }
 

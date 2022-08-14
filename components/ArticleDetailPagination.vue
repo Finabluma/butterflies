@@ -119,8 +119,8 @@ section {
           mb-3
           px-2
           py-2
-          md:h-36
-          lg:h-32;
+          md:h-28
+          lg:h-28;
 
         & .icon {
           @apply hidden

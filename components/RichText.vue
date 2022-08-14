@@ -94,14 +94,16 @@ export default {
     mr-0
     w-auto
     font-darkmode
-    bg-red-400
+    bg-gray-500
     text-gray-300
+    hover:bg-red-400
     rounded-none
     text-base
     break-all
     lg:text-lg
     dark:bg-gray-700
-    dark:text-yellow-400;
+    dark:text-gray-400
+    dark:hover:bg-gray-800;
   }
 }
 </style>

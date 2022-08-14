@@ -104,10 +104,10 @@ export default {
       md:w-9/12
       lg:w-8/12
       xl:w-7/12
+      xl:py-8
       2xl:w-6/12
       py-5
-      mb-32
-      xl:py-8;
+      mb-32;
 
       & .noarticles {
         @apply py-10
