@@ -80,10 +80,12 @@ export default {
   h-[32vh]
   content-before
   overflow-hidden
+  bg-gray-300
+  dark:bg-gray-200
   sm:h-[45vh]
   md:h-[25vh]
   lg:h-[33vh]
-  xl:h-[32vh];
+  xl:h-[28vh];
 
   &:before {
     @apply absolute
@@ -92,10 +94,10 @@ export default {
     z-10
     top-0
     bg-gradient-to-b
-    from-black/50
-    to-gray-600
+    from-black/20
+    to-gray-300
     dark:from-black/50
-    dark:to-gray-800
+    dark:to-gray-600
     md:backdrop-blur-[1px];
   }
 
@@ -133,7 +135,6 @@ export default {
         @apply font-darkmode
         text-3xl
         mb-0
-        text-gray-300
         dark:text-gray-400
         content-after
         sm:mb-0
@@ -153,7 +154,7 @@ export default {
           @apply flex
           text-xs
           font-niti
-          text-gray-300
+          /* text-gray-300 */
           dark:text-gray-400;
 
           & li {

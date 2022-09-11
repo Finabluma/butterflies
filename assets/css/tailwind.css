@@ -63,7 +63,7 @@
   }
 
   .icon {
-    @apply w-5;
+    @apply w-4;
 
     &.icon-hashtag {
       @apply w-4;

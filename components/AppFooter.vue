@@ -3,11 +3,6 @@
     <!-- <p>https://ofm.sanity.studio/</p> -->
     <div class="container">
       <div class="container-inner__top">
-        <p class="login">
-          <link-external href="https://ofm.sanity.studio">
-            <span class="sr-only">Inicia sesión</span> <IconUser />
-          </link-external>
-        </p>
         <nuxt-link
           to="/"
           class="logo-link"
@@ -18,7 +13,14 @@
             ofm
           </span></nuxt-link
         >
-        <color-mode-picker />
+        <div class="secondary">
+          <p class="login">
+            <link-external href="https://ofm.sanity.studio">
+              <span class="sr-only">Inicia sesión</span> <IconUser />
+            </link-external>
+          </p>
+          <color-mode-picker />
+        </div>
       </div>
       <!-- <div class="container-inner__bottom w-8/12">
         <p class="login ml-20">
@@ -65,7 +67,17 @@ footer {
     items-center;
 
     & .container-inner__top {
-      @apply w-full flex justify-evenly items-center;
+      @apply w-full flex justify-between items-center;
+
+      & .secondary {
+        @apply flex
+        justify-around
+        items-center;
+
+        & .login {
+          @apply mr-3;
+        }
+      }
     }
 
     /* & .container-inner__bottom {

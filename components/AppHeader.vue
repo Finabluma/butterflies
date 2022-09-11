@@ -1,5 +1,5 @@
 <template>
-  <header ref="nav" class="global-header" :class="{ white: white }">
+  <header ref="nav" class="global-header">
     <span role="status" aria-live="polite"></span>
     <!-- <div class="banner">
       <div class="banner__inner l-center">
@@ -48,7 +48,7 @@
             /> -->
           </span></NuxtLink
         >
-        <!-- <color-mode-picker /> -->
+        <color-mode-picker />
       </div>
     </nav>
   </header>
