@@ -96,7 +96,7 @@ export default {
     bg-gradient-to-b
     from-black/20
     to-gray-300
-    dark:from-black/50
+    dark:from-black/60
     dark:to-gray-600
     md:backdrop-blur-[1px];
   }
